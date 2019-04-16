@@ -8,16 +8,7 @@ public class Habilidades : MonoBehaviour
     public float tiempo;
     public bool actTiempo = false;
     public bool esHab1=false, esHab2=false, esHab3= false, usoHab = false, verCasiHab1Zor=false, condiZor1=false;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-    private void Awake()
-    {
-        
-    }
-    // Update is called once per frame
+
     void Update()
     {
         if (actTiempo == true) { tiempo = Time.deltaTime + tiempo; }

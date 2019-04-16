@@ -16,35 +16,23 @@ public class MenuManager : MonoBehaviourPunCallbacks
     [SerializeField]
     private InputField userNameInput, createRoomInput, joinRommInput;
 
-    /// <summary>
-    /// 
-    /// </summary>
     private void Awake()
     {
         PhotonNetwork.ConnectUsingSettings();
     }
 
-    /// <summary>
-    /// 
-    /// </summary>
     public override void OnConnectedToMaster()
     {
         Debug.Log("__________Conectando al servidor__________");
         PhotonNetwork.JoinLobby(TypedLobby.Default);
     }
 
-    /// <summary>
-    /// 
-    /// </summary>
     public override void OnJoinedLobby()
     {
         Debug.Log("__________Conectando al Lobby_____________");
         userNameScreen.SetActive(true); 
     }
 
-    /// <summary>
-    /// 
-    /// </summary>
     public override void OnJoinedRoom()
     {
         //Aqui mandamos llamar la escena del juego
@@ -53,9 +41,6 @@ public class MenuManager : MonoBehaviourPunCallbacks
 
 
     #region UIMethots
-    /// <summary>
-    /// 
-    /// </summary>
     public void OnClick_CreateNameButton()
     {
         PhotonNetwork.NickName = userNameInput.text;
@@ -63,9 +48,6 @@ public class MenuManager : MonoBehaviourPunCallbacks
         connectScreen.SetActive(true);
     }
 
-    /// <summary>
-    /// 
-    /// </summary>
     public void OnNameInputfield_Changed()
     {
         if (userNameInput.text.Length >=2)
@@ -78,9 +60,6 @@ public class MenuManager : MonoBehaviourPunCallbacks
         }
     }
 
-    /// <summary>
-    /// 
-    /// </summary>
     public void OnClick_JoinRoom()
     {
         RoomOptions room = new RoomOptions();
@@ -89,18 +68,11 @@ public class MenuManager : MonoBehaviourPunCallbacks
         PhotonNetwork.JoinOrCreateRoom(joinRommInput.text, room, TypedLobby.Default);
     }
 
-    /// <summary>
-    /// 
-    /// </summary>
     public void OnClick_CreateRoom()
     {
         PhotonNetwork.CreateRoom(createRoomInput.text, new RoomOptions { MaxPlayers = 4 }, null);
     }
 
-    /// <summary>
-    /// 
-    /// </summary>
-    /// <param name="cause"></param>
     public override void OnDisconnected(DisconnectCause cause)
     {
         Debug.LogWarningFormat("__________Se ha desconectado el servidor a causa de {0}__________", cause);

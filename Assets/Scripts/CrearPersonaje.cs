@@ -14,19 +14,10 @@ public class CrearPersonaje : MonoBehaviour
     public Transform IconoParent;
     public List<GameObject> iconos = new List<GameObject>();
     
-
-    // Start is called before the first frame update
     void Start()
     {
         Crear();
         crearIconos();
-    }
-
-   
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     public void Crear()
@@ -39,21 +30,23 @@ public class CrearPersonaje : MonoBehaviour
         per.GetComponent<Personaje>().AsignarTamanos();
         AsignarTexturas();  
     }
+
     public void crearIconos()
     {
         total = 3;
-        posx2 = 2.5f;
-        posy2 = 1.3f;
+        posx2 = 2.57f;
+        posy2 = -1.45f;
         for (int i = 0; i < total; i++)
         {
 
             GameObject iconoTemp = Instantiate(IconoPrefab, new Vector3(posx2, posy2, 0), Quaternion.Euler(new Vector3(0, 0, 0)));
             iconos.Add(iconoTemp);
             iconoTemp.transform.parent = IconoParent;
-            posx2 = posx2 + 2;
+            posx2 = posx2 + 1.92f;
         }
         iconosPersonajes();
     }
+
     public void iconosPersonajes()
     {
         switch (idPersonaje)
@@ -92,35 +85,36 @@ public class CrearPersonaje : MonoBehaviour
                 break;
         }
     }
-    
-    void AsignarCoord()
+
+    public void AsignarCoord()
     {
         switch (idPersonaje)
         {
             case 0:
-                posy = 4.7f;
+                posy = 2.7f;
                 break;
             case 1:
-                posy = 4.5f;
+                posy = 2.5f;
                 break;
             case 2:
-                posy = 4.4f;
+                posy = 2.4f;
                 break;
             case 3:
-                posy = 4.1f;
+                posy = 2.1f;
                 break;
             case 4:
-                posy = 4.7f;
+                posy = 2.7f;
                 break;
             case 5:
-                posy = 4.5f;
+                posy = 2.5f;
                 break;
             default:
                 break;
         }
 
     }
-    void AsignarTexturas()
+
+    public void AsignarTexturas()
     {
         switch (idPersonaje)
         {

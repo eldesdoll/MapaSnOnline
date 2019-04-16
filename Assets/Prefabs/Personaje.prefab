@@ -56,7 +56,6 @@ MonoBehaviour:
   textPh: {fileID: 0}
   scripts: {fileID: 0}
   tamano: {fileID: 0}
-  newSize: {x: 0, y: 0, z: 0}
 --- !u!212 &7799565964308068991
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -93,7 +92,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 1
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
