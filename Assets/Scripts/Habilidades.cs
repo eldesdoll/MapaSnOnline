@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class Habilidades : MonoBehaviour
 {
-    public GameObject scripts, per;
-    public float tiempo;
-    public bool actTiempo = false;
-    public bool esHab1=false, esHab2=false, esHab3= false, usoHab = false, verCasiHab1Zor=false, condiZor1=false;
+    public GameObject scripts, per; 
+    public bool esHab1=false, esHab2=false, esHab3= false, usoHab = false, verCasiHab1Zor = false;
+
+    private float tiempo;
+    private bool actTiempo = false, condiZor1=false;
     // Start is called before the first frame update
     void Start()
     {
@@ -160,6 +161,7 @@ public class Habilidades : MonoBehaviour
         actTiempo = true;
         GetComponent<Dado>().esTurno = false;
         per.GetComponent<Animator>().SetBool("hab3", true);
+        per.GetComponent<Personaje>().esBuff = true;
     }
     public void terhab3zor()
     {

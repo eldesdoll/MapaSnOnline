@@ -9,6 +9,12 @@ TagManager:
   - Personaje
   - AnimaPH
   - PerPref
+  - ObjAtraccion
+  - ObjPintura
+  - ObjBloqueado
+  - ObjInmune
+  - ObjBuff
+  - ObjNerf
   layers:
   - Default
   - TransparentFX
