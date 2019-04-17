@@ -490,6 +490,8 @@ GameObject:
   - component: {fileID: 6523115929363339349}
   - component: {fileID: 5936436314714885123}
   - component: {fileID: 4421317868708884730}
+  - component: {fileID: 9094810894635078325}
+  - component: {fileID: 227617525184847327}
   m_Layer: 0
   m_Name: Personaje
   m_TagString: PerPref
@@ -537,45 +539,6 @@ MonoBehaviour:
   textPh: {fileID: 0}
   scripts: {fileID: 0}
   tamano: {fileID: 0}
-  esPintado: 0
-  esBloqueado: 0
-  esBuff: 0
-  esNerf: 0
-  esInmune: 0
-  esAtraido: 0
---- !u!114 &3324035124291399004
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8374747939170389795}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fba2c1cdb4ce7e141850eaa522b90f7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DadoBuff:
-  - {fileID: 21300000, guid: d14582b13ba38904dbe5f675ed7ce97b, type: 3}
-  - {fileID: 21300000, guid: 8ab5f2593b214d242ba09eb345a52870, type: 3}
-  - {fileID: 21300000, guid: 1c3065182fb2cf94fb32b5c253ab0102, type: 3}
-  DadoNerf:
-  - {fileID: 21300000, guid: 2eabf9af34a6e484380ecc15b35b52be, type: 3}
-  - {fileID: 21300000, guid: 51db985695821c440af18e07e3e84cc0, type: 3}
-  - {fileID: 21300000, guid: 8ac2f615dd1ae45488e4d4e097a2b94a, type: 3}
-  tiempoDado: 0
-  tiempoFrame: 0
-  actTiempo: 0
-  actFrame: 0
-  inmu: {fileID: 0}
-  pintu: {fileID: 0}
-  bloq: {fileID: 0}
-  atrac: {fileID: 0}
-  buff: {fileID: 0}
-  nerf: {fileID: 0}
-  per: {fileID: 0}
-  spriteRBuff: {fileID: 0}
-  spriteRNerf: {fileID: 0}
 --- !u!212 &7799565964308068991
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -612,7 +575,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 1
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -717,3 +680,40 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &9094810894635078325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8374747939170389795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  ObservedComponents:
+  - {fileID: 227617525184847327}
+  viewIdField: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
+--- !u!114 &227617525184847327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8374747939170389795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0

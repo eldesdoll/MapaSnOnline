@@ -11,13 +11,11 @@ public class Personaje : MonoBehaviour
     public GameObject textCasilla, textPh,scripts;
     public bool esPintado, esBloqueado, esBuff, esNerf, esInmune, esAtraido;
 
-    // Start is called before the first frame update
     /*void Start()
     {
         
     }*/
 
-    // Update is called once per frame
     /// <summary>
     /// Update
     /// Este metodo se llama una vez por frame
@@ -36,7 +34,6 @@ public class Personaje : MonoBehaviour
         scripts = GameObject.Find("Scripts");
 
     }
-  
     
     public void AsignarTamanos()
     {
@@ -64,6 +61,7 @@ public class Personaje : MonoBehaviour
                 break;
         }
     }
+
     /// <summary>
     /// imprimeCasilla
     /// Este metodo es llamado por update, despues del turno del jugador imprime la casilla actual del jugador de todo el tablero 

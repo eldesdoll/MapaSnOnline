@@ -37,7 +37,7 @@ public class CrearCasilla : MonoBehaviour
     {
         total = 200;
         int cont = 1;
-        posy = 3; posx = 5;
+        posy = 1; posx = 5;
         for (int i = 0; i < total; i++)
         {
             
