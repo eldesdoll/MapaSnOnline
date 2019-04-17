@@ -11,12 +11,14 @@ public class Dado : MonoBehaviour
     public GameObject Habilidades,btnHab1,btnHab2,btnHab3,mapa,personaje,objPH;
     public TextMeshProUGUI contDado;
     public bool esTurno=false, seDetuvo=false, caminando=false;
-    public float tiempo, tiempoPH, caminarCasilla, destino,posReal;
-    public int valorDado=1,valorAnimPH=0, valorMax = 6, valAnterior=1;
+    public float  caminarCasilla, destino,posReal;
+    public int  valorMax = 6 ;
     public bool yaTiro = false;
     public Sprite[] PH;
     public SpriteRenderer spriteR;
 
+    private float tiempo, tiempoPH;
+    private int valorDado = 1, valorAnimPH = 0, valAnterior = 1;
 
     // Update is called once per frame
     /// <summary>

@@ -151,6 +151,7 @@ public class Habilidades : MonoBehaviour
         actTiempo = true;
         GetComponent<Dado>().esTurno = false;
         per.GetComponent<Animator>().SetBool("hab3", true);
+        per.GetComponent<Personaje>().esBuff = true;
     }
     public void terhab3zor()
     {

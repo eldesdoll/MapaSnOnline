@@ -583,7 +583,7 @@ MonoBehaviour:
   m_ViewMode: 0
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets
+  - Assets/Prefabs
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\eldes\Documents\GitHub\Pixel Mix
   m_LockTracker:
@@ -595,18 +595,18 @@ MonoBehaviour:
     m_ExpandedIDs: 00000000900a0000960a0000060b0000dc0b00002c0c0000900d0000d60e00003a0f0000a4330000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: Prefabs
+      m_OriginalName: Prefabs
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 2826
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 0}
     m_SearchString: 
@@ -647,8 +647,8 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
-    m_ExpandedInstanceIDs: c6230000342b0000782b0000122a000058360000603600005c360000de0900000a0c0000c80b00001e370000000000006c0a0000f2090000c0300000aadbffffaa0c0000b00a00002e0b0000ea0a0000f4090000ce0c0000bc0a0000cc0b0000420b0000fc0a00008a910000829100007a910000eaaf0000d00c0000ea430000f609000044560000b0860000a486000038bd000040bd000048bd00007cc9000084c900008cc90000a20b0000380c00001e0b0000
+    m_HadKeyboardFocusLastEvent: 1
+    m_ExpandedInstanceIDs: c6230000342b0000782b0000122a000058360000603600005c360000de0900000a0c0000c80b00001e370000000000006c0a0000f2090000c0300000aadbffffaa0c0000b00a00002e0b0000ea0a0000f4090000ce0c0000bc0a0000cc0b0000420b0000fc0a00008a910000829100007a910000eaaf0000d00c0000ea430000f609000044560000b0860000a486000038bd000040bd000048bd00007cc9000084c900008cc90000a20b0000380c00001e0b000022360000f4350000fc3500002a360000323600000e0e0000ce0a0000bc0d00003c63000024630000446300004c6300002c63000034630000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -744,18 +744,18 @@ MonoBehaviour:
       m_ExpandedIDs: 
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: DADO
+        m_OriginalName: DADO
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: 4428
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 4}
       m_SearchString: 

@@ -8,7 +8,8 @@ public class Personaje : MonoBehaviour
     public int casillaActual=0, ph=0;
     public SpriteRenderer spriteR;
     public Sprite[] sprite;
-    public GameObject textCasilla, textPh,scripts,tamano;
+    public GameObject textCasilla, textPh,scripts;
+    public bool esPintado, esBloqueado, esBuff, esNerf, esInmune, esAtraido;
 
     /*void Start()
     {
