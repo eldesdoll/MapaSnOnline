@@ -90,7 +90,7 @@ public class Habilidades : MonoBehaviour
 
                 break;
             case 2:
-
+                hab3austin();
                 break;
             case 3:
 
@@ -165,7 +165,11 @@ public class Habilidades : MonoBehaviour
             esHab3 = false;
         }
     }
-   
+    
+    public void hab3austin()
+    {
+
+    }
 
     public void terminarHabilidades()
     {

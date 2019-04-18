@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{D019BCEE-2E67-6CB0-00D7-A3D3F69DB7E4}</ProjectGuid>
+    <ProjectGuid>{346E39E9-962D-341C-5382-66CDC078C6D9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -49,7 +49,7 @@
     <UnityProjectGenerator>Unity/VSTU</UnityProjectGenerator>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
-    <UnityVersion>2018.3.10f1</UnityVersion>
+    <UnityVersion>2018.3.5f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -132,19 +132,19 @@
     <None Include="Assets\Photon\PhotonUnityNetworking\changelog.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/eldes/Documents/GitHub/Pixel Mix/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/USER/Desktop/PixelMix/mapaOnline/MapaOnline/MapaSnOnline/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Users/eldes/Documents/GitHub/Pixel Mix/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>C:/Users/USER/Desktop/PixelMix/mapaOnline/MapaOnline/MapaSnOnline/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/eldes/Documents/GitHub/Pixel Mix/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/USER/Desktop/PixelMix/mapaOnline/MapaOnline/MapaSnOnline/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/eldes/Documents/GitHub/Pixel Mix/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/USER/Desktop/PixelMix/mapaOnline/MapaOnline/MapaSnOnline/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>C:/Users/eldes/Documents/GitHub/Pixel Mix/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>C:/Users/USER/Desktop/PixelMix/mapaOnline/MapaOnline/MapaSnOnline/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -348,19 +348,19 @@
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Photon3Unity3D">
-      <HintPath>C:/Users/eldes/Documents/GitHub/Pixel Mix/Assets/Photon/PhotonLibs/Photon3Unity3D.dll</HintPath>
+      <HintPath>C:/Users/USER/Desktop/PixelMix/mapaOnline/MapaOnline/MapaSnOnline/Assets/Photon/PhotonLibs/Photon3Unity3D.dll</HintPath>
     </Reference>
     <Reference Include="websocket-sharp">
-      <HintPath>C:/Users/eldes/Documents/GitHub/Pixel Mix/Assets/Photon/PhotonLibs/WebSocket/websocket-sharp.dll</HintPath>
+      <HintPath>C:/Users/USER/Desktop/PixelMix/mapaOnline/MapaOnline/MapaSnOnline/Assets/Photon/PhotonLibs/WebSocket/websocket-sharp.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>C:/Users/eldes/Documents/GitHub/Pixel Mix/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>C:/Users/USER/Desktop/PixelMix/mapaOnline/MapaOnline/MapaSnOnline/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>C:/Users/eldes/Documents/GitHub/Pixel Mix/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/USER/Desktop/PixelMix/mapaOnline/MapaOnline/MapaSnOnline/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>C:/Users/eldes/Documents/GitHub/Pixel Mix/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>C:/Users/USER/Desktop/PixelMix/mapaOnline/MapaOnline/MapaSnOnline/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -710,35 +710,35 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="PhotonUnityNetworking.Utilities.PhotonPlayer.Editor.csproj">
-      <Project>{6306D19D-672F-09E4-F5EF-CF86D4D5884E}</Project>
+      <Project>{08381CA3-2C4F-A9FC-465B-92D1066DBBBB}</Project>
       <Name>PhotonUnityNetworking.Utilities.PhotonPlayer.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.Utilities.csproj">
-      <Project>{23F866A5-B44A-96C8-7ADF-23BC6BADE541}</Project>
+      <Project>{8F00C14F-F9EC-EB25-35E6-4DF443245500}</Project>
       <Name>PhotonUnityNetworking.Utilities</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonWebSocket.csproj">
-      <Project>{AEF057E9-4BF1-E4E3-E4DF-C1934670FF86}</Project>
+      <Project>{CFDD54CB-2B78-53B0-997D-5AB9D9778A2C}</Project>
       <Name>PhotonWebSocket</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonRealtime.csproj">
-      <Project>{CFB82ED3-10B6-9B43-7908-474ED61D60D7}</Project>
+      <Project>{D071821A-2F5D-38F9-0764-5D9798061591}</Project>
       <Name>PhotonRealtime</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.csproj">
-      <Project>{770E9095-E4C2-C6B9-BBD7-1D468229C51B}</Project>
+      <Project>{E7E39128-3826-8CCD-FD9D-E41B96E53C18}</Project>
       <Name>PhotonUnityNetworking</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonChat.csproj">
-      <Project>{41EE1870-5348-B5B0-5743-8601EF359770}</Project>
+      <Project>{DA9CB1F5-D3D5-6E50-5E8B-8187D78DADA3}</Project>
       <Name>PhotonChat</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.Utilities.Culling.Editor.csproj">
-      <Project>{AE5A4432-9716-3AE7-BF7A-0674B4CA0CDA}</Project>
+      <Project>{42B36068-615D-C890-F8EA-8E571037F323}</Project>
       <Name>PhotonUnityNetworking.Utilities.Culling.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.Editor.csproj">
-      <Project>{4BD01269-1751-F8CE-E58C-9B2CACD5DE9B}</Project>
+      <Project>{369A834F-49DE-D929-B4F9-AC0EC75964F4}</Project>
       <Name>PhotonUnityNetworking.Editor</Name>
     </ProjectReference>
   </ItemGroup>
