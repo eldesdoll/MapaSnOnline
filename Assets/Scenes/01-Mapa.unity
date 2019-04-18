@@ -9031,11 +9031,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scripts: {fileID: 0}
   per: {fileID: 0}
+  tiempo: 0
+  actTiempo: 0
   esHab1: 0
   esHab2: 0
   esHab3: 0
   usoHab: 0
   verCasiHab1Zor: 0
+  condiZor1: 0
 --- !u!1 &962847507
 GameObject:
   m_ObjectHideFlags: 0
@@ -17850,9 +17853,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93a01a64fbb08484fab1de4c0a5bacb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerPrefab: {fileID: 0}
   canvas: {fileID: 0}
-  scenenCam: {fileID: 0}
 --- !u!4 &1975665694
 Transform:
   m_ObjectHideFlags: 0

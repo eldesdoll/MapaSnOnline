@@ -98,6 +98,7 @@ public class CrearCasilla : MonoBehaviour
             {
                 casillas[i].GetComponent<Casilla>().AsignarTextura(sprites[4]);
                 casillas[i].GetComponent<Casilla>().esMinijuego = true;
+                
             }
             if (i == 0) {
                 casillas[i].GetComponent<Casilla>().AsignarTextura(sprites[5]);casillas[i].GetComponent<Casilla>().esInicio = true;

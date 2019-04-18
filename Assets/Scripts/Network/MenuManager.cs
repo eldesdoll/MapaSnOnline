@@ -4,11 +4,12 @@ using UnityEngine;
 using Photon.Pun;
 using Photon.Realtime;
 using UnityEngine.UI;
+using TMPro;
 
 public class MenuManager : MonoBehaviourPunCallbacks
 {
     //[SerializeField] Fuerza a Unity a serializar un campo privado.
-    //[Tooltip()] Especifique una información sobre herramientas para un campo en la ventana del Inspector.
+    //[Tooltip()] Especifica una información sobre herramientas para un campo en la ventana del Inspector.
 
     [Tooltip("UI del panel de crear nickname y concectarse a una sala")]
     [SerializeField]
@@ -20,7 +21,7 @@ public class MenuManager : MonoBehaviourPunCallbacks
 
     [Tooltip("UI de la caja de texto de crear sala, unirse a una sala y del nickname")]
     [SerializeField]
-    private InputField userNameInput, createRoomInput, joinRommInput;
+    private TMP_InputField userNameInput, createRoomInput, joinRommInput;
 
     /// <summary>
     /// La funcion awake es una funcion especial de Unity que se usa para inicializar 
@@ -112,7 +113,8 @@ public class MenuManager : MonoBehaviourPunCallbacks
         RoomOptions room = new RoomOptions();
         room.MaxPlayers = 4;
 
-        PhotonNetwork.JoinOrCreateRoom(joinRommInput.text, room, TypedLobby.Default);
+        //PhotonNetwork.JoinOrCreateRoom(joinRommInput.text, room, TypedLobby.Default);
+        PhotonNetwork.JoinRoom(joinRommInput.text);
     }
 
     /// <summary>
