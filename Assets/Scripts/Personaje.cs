@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using Photon.Pun;
 
 public class Personaje : MonoBehaviour
 {
@@ -144,6 +145,12 @@ public class Personaje : MonoBehaviour
             {
                 ph = 0;
             }
+            else if (scripts.GetComponent<CrearCasilla>().casillas[casillaActual].GetComponent<Casilla>().esMinijuego == true)
+            {
+                int random = Random.Range(2, 11);
+                PhotonNetwork.LoadLevel(random);
+            }
+
             imprimePh();
             scripts.GetComponent<Habilidades>().verCasiHab1Zor = false;
         }

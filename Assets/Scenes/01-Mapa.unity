@@ -9040,29 +9040,6 @@ MonoBehaviour:
   usoHab: 0
   verCasiHab1Zor: 0
   condiZor1: 0
---- !u!114 &940622044
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 940622038}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b69b1413b5f8ca74282b9fe7560f4aaa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pint: {fileID: 0}
-  des: {fileID: 0}
-  scripts: {fileID: 0}
-  cas: 0
-  posx: 0
-  total: 0
-  posy: 0
-  PintadosPrefab: {fileID: 3184629594125890550, guid: 3062b37607c7c4e438409d44b6d4dac8,
-    type: 3}
-  Pintados: {fileID: 1603508696}
-  pintadasList: []
 --- !u!1 &962847507
 GameObject:
   m_ObjectHideFlags: 0
@@ -17907,9 +17884,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93a01a64fbb08484fab1de4c0a5bacb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerPrefab: {fileID: 0}
   canvas: {fileID: 0}
-  scenenCam: {fileID: 0}
 --- !u!4 &1975665694
 Transform:
   m_ObjectHideFlags: 0
