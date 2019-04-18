@@ -43,7 +43,7 @@ public class CrearCasilla : MonoBehaviour
             
                 GameObject casillaTemp = Instantiate(CasillaPrefab, new Vector3(posx, posy, 0), Quaternion.Euler(new Vector3(0, 180, 0)));
                 casillas.Add(casillaTemp);
-                
+                casillaTemp.name = ""+i+"";
                 casillaTemp.GetComponent<Casilla>().idCasilla = cont;
 
                 casillaTemp.transform.parent = CasillasParent;
