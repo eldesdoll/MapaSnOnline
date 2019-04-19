@@ -65,7 +65,12 @@ public class Indicadores : MonoBehaviour
                 nerf.transform.localPosition = new Vector3(-1.6f, 8.8f);
                 break;
             case 5:
-
+                inmu.transform.localPosition = new Vector3(4, 5f);
+                pintu.transform.localPosition = new Vector3(1.5f, 5f);
+                bloq.transform.localPosition = new Vector3(-3.56f, 5f);
+                atrac.transform.localPosition = new Vector3(-0.83f, 5);
+                buff.transform.localPosition = new Vector3(1.8f, 7.8f);
+                nerf.transform.localPosition = new Vector3(-1.6f, 7.8f);
                 break;
             default:
                 break;

@@ -13,15 +13,13 @@ public class IndicadoresCasilla : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        des = GameObject.FindGameObjectWithTag("DesLeonn");
-        pint = GameObject.FindGameObjectWithTag("Pint");
         Crear();
     }
 
     // Update is called once per frame
     void Update()
     {
-       // estadoCasilla();
+        pintadas();
     }
 
     public void estadoCasilla()
@@ -30,19 +28,22 @@ public class IndicadoresCasilla : MonoBehaviour
         //desLeonn();
     }
 
-    /*public void pintar(int cas)
-    {
-            GetComponent<CrearCasilla>().casillas[cas].GetComponent<Casilla>().esPintada = true;
-            posx = posini + cas;
-            GameObject casillaTemp = Instantiate(PintadosPrefab, new Vector3(posx, 1, 0), Quaternion.Euler(new Vector3(0, 180, 0)));
-            pintadasList.Add(casillaTemp);
-            casillaTemp.name = "" +cas+ "";
-            casillaTemp.transform.parent = Pintados;
-    }*/
 
-    public void pintadas(int cas)
+    public void pintadas()
     {
-
+        total = 200;
+        
+        for (int i = 0; i < total; i++)
+        {
+            if (GetComponent<CrearCasilla>().casillas[i].GetComponent<Casilla>().esPintada==true)
+            {
+                pintadasList[i].SetActive(true);
+            }
+            else
+            {
+                pintadasList[i].SetActive(false);
+            }
+        }
     }
     public void desLeonn()
     {
