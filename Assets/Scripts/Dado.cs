@@ -116,7 +116,7 @@ public class Dado : MonoBehaviour
                     personaje.GetComponent<Animator>().SetBool("isWalking", true);
                     valorMax = 6;
                     GetComponent<Habilidades>().usoHab = false;
-                    GetComponent<Habilidades>().esHab3 = false;
+                    if(GetComponent<CrearPersonaje>().idPersonaje==5){GetComponent<Habilidades>().esHab3 = false;}
                 }
             }
             

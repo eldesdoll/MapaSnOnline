@@ -150,7 +150,7 @@ public class Personaje : MonoBehaviour
                 int random = Random.Range(2, 11);
                 PhotonNetwork.LoadLevel(random);
             }
-            else if (scripts.GetComponent<CrearCasilla>().casillas[casillaActual].GetComponent<Casilla>().esPintada == true)
+            if (scripts.GetComponent<CrearCasilla>().casillas[casillaActual].GetComponent<Casilla>().esPintada == true)
             {
                 esPintado = true;
             }
