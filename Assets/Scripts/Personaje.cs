@@ -116,7 +116,7 @@ public class Personaje : MonoBehaviour
     /// </summary>
     public void verificaCasilla()
     {
-        if ((casillaActual >0 && scripts.GetComponent<Dado>().yaTiro==true && scripts.GetComponent<Dado>().esTurno == false)||(scripts.GetComponent<Habilidades>().verCasiHab1Zor==true))
+        if ((casillaActual > 0 && scripts.GetComponent<Dado>().yaTiro == true && scripts.GetComponent<Dado>().esTurno == false) || (scripts.GetComponent<Habilidades>().verCasiHab1Zor == true))
         {
             if (scripts.GetComponent<CrearCasilla>().casillas[casillaActual].GetComponent<Casilla>().esHabilidad == true)
             {
@@ -145,10 +145,14 @@ public class Personaje : MonoBehaviour
             {
                 ph = 0;
             }
-            else if (scripts.GetComponent<CrearCasilla>().casillas[casillaActual].GetComponent<Casilla>().esMinijuego == true)
+            else if (scripts.GetComponent<CrearCasilla>().casillas[casillaActual].GetComponent<Casilla>().esMinijuego == true )
             {
                 int random = Random.Range(2, 11);
                 PhotonNetwork.LoadLevel(random);
+            }
+            if (scripts.GetComponent<CrearCasilla>().casillas[casillaActual].GetComponent<Casilla>().esPintada == true)
+            {
+                esPintado = true;
             }
 
             imprimePh();

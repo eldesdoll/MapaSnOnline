@@ -8,7 +8,7 @@ public class CrearPersonaje : MonoBehaviour
 {
     public float posx, posy, posx2, posy2;
     public int idPersonaje,total;
-    public GameObject personajePrefab, per;
+    public GameObject personajePrefab, per,personajeTemp;
     public Transform personajeParent;
     public Sprite[] sprites;
     public GameObject IconoPrefab;
@@ -25,8 +25,9 @@ public class CrearPersonaje : MonoBehaviour
     {
         posy = 4.5f; posx = 5;
         AsignarCoord();
-        GameObject personajeTemp = Instantiate(personajePrefab, new Vector3(posx, posy, 0), Quaternion.Euler(new Vector3(0, 0, 0)));
+        personajeTemp = Instantiate(personajePrefab, new Vector3(posx, posy, 0), Quaternion.Euler(new Vector3(0, 0, 0)));
         personajeTemp.transform.parent = personajeParent;
+        AsignarNombres();
         per = GameObject.FindGameObjectWithTag("PerPref");
         per.GetComponent<Personaje>().AsignarTamanos();
         AsignarTexturas();  
@@ -78,9 +79,9 @@ public class CrearPersonaje : MonoBehaviour
                 iconos[2].GetComponent<Icono>().AsignarTextura(sprites[14]);
                 break;
             case 5:
-                iconos[0].GetComponent<Icono>().AsignarTextura(sprites[3]);
-                iconos[1].GetComponent<Icono>().AsignarTextura(sprites[4]);
-                iconos[2].GetComponent<Icono>().AsignarTextura(sprites[5]);
+                iconos[0].GetComponent<Icono>().AsignarTextura(sprites[0]);
+                iconos[1].GetComponent<Icono>().AsignarTextura(sprites[1]);
+                iconos[2].GetComponent<Icono>().AsignarTextura(sprites[2]);
                 break;
             default:
                 break;
@@ -107,14 +108,39 @@ public class CrearPersonaje : MonoBehaviour
                 posy = 2.7f;
                 break;
             case 5:
-                posy = 2.5f;
+                posy = 2.7f;
                 break;
             default:
                 break;
         }
 
     }
-
+    public void AsignarNombres()
+    {
+        switch (idPersonaje)
+        {
+            case 0:
+                personajeTemp.name = "Zorem";
+                break;
+            case 1:
+                personajeTemp.name = "Ian";
+                break;
+            case 2:
+                personajeTemp.name = "Austin";
+                break;
+            case 3:
+                personajeTemp.name = "Rubi";
+                break;
+            case 4:
+                personajeTemp.name = "Stella";
+                break;
+            case 5:
+                personajeTemp.name = "Leonn";
+                break;
+            default:
+                break;
+        }
+    }
     public void AsignarTexturas()
     {
         switch (idPersonaje)

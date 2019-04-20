@@ -12,13 +12,13 @@ public class Dado : MonoBehaviour
     public TextMeshProUGUI contDado;
     public bool esTurno=false, seDetuvo=false, caminando=false;
     public float  caminarCasilla, destino,posReal;
-    public int  valorMax = 6 ;
-    public bool yaTiro = false;
+    public int valorDado = 1, valorMax = 6 , valHab3Len;
+    public bool yaTiro = false, verificado;
     public Sprite[] PH;
     public SpriteRenderer spriteR;
 
     private float tiempo, tiempoPH;
-    private int valorDado = 1, valorAnimPH = 0, valAnterior = 1;
+    private int  valorAnimPH = 0, valAnterior = 1;
 
     // Update is called once per frame
     /// <summary>
@@ -82,29 +82,44 @@ public class Dado : MonoBehaviour
             if (tiempo >= 0.08f)
             {
                 tiempo = 0.0f;
-                valorDado = Random.Range(1, valorMax+1);
+                valorDado = Random.Range(1, valorMax+1);      
                 do 
                 {
                  valorDado = Random.Range(1, valorMax + 1);
                 } while (valorDado == valAnterior) ;
                 valAnterior = valorDado;
+                if (GetComponent<Habilidades>().repite == true) { valHab3Len = valorDado; }
             }
         }
         else
         {
             mapa.SetActive(false);
             contDado.color = Color.red;
+           
             if (tiempo >= 1.5f)
             {
-                personaje.GetComponent<Personaje>().casillaActual = personaje.GetComponent<Personaje>().casillaActual + valorDado;
-                destino = valorDado;
-                esTurno = false;
-                seDetuvo = false;
-                caminando = true;
-                personaje.GetComponent<Animator>().SetBool("isWalking", true);
-                valorMax = 6;
-                GetComponent<Habilidades>().usoHab = false;
+                if (GetComponent<Habilidades>().repite == true)
+                {
+                    
+                    esTurno = true;
+                    seDetuvo = false;
+                    GetComponent<Habilidades>().repite = false;
+                }
+                else
+                {
+                    valorDado = valHab3Len + valorDado;
+                    personaje.GetComponent<Personaje>().casillaActual = personaje.GetComponent<Personaje>().casillaActual + valorDado;
+                    destino = valorDado;
+                    esTurno = false;
+                    seDetuvo = false;
+                    caminando = true;
+                    personaje.GetComponent<Animator>().SetBool("isWalking", true);
+                    valorMax = 6;
+                    GetComponent<Habilidades>().usoHab = false;
+                    if(GetComponent<CrearPersonaje>().idPersonaje==5){GetComponent<Habilidades>().esHab3 = false;}
+                }
             }
+            
         }
         
 
@@ -157,7 +172,7 @@ public class Dado : MonoBehaviour
     /// </summary>
     public void estadoHabilidades()
     {
-        if (yaTiro == true || esTurno == false || GetComponent<Habilidades>().usoHab == true)
+        if (yaTiro == true || esTurno == false || GetComponent<Habilidades>().usoHab == true|| personaje.GetComponent<Personaje>().esPintado==true)
         {
             Habilidades.SetActive(false);
         }
@@ -208,8 +223,9 @@ public class Dado : MonoBehaviour
                 personaje.GetComponent<Animator>().SetBool("isWalking", false);
                 caminando = false;
                 caminarCasilla = 0;
+                GetComponent<Dado>().valHab3Len = 0;
             }
-        
+
         }
         
     }
