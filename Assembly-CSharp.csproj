@@ -60,13 +60,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\DOTween\Modules\DOTweenModuleAudio.cs" />
-    <Compile Include="Assets\DOTween\Modules\DOTweenModulePhysics.cs" />
-    <Compile Include="Assets\DOTween\Modules\DOTweenModulePhysics2D.cs" />
-    <Compile Include="Assets\DOTween\Modules\DOTweenModuleSprite.cs" />
-    <Compile Include="Assets\DOTween\Modules\DOTweenModuleUI.cs" />
-    <Compile Include="Assets\DOTween\Modules\DOTweenModuleUnityVersion.cs" />
-    <Compile Include="Assets\DOTween\Modules\DOTweenModuleUtils.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\Casilla.cs" />
     <Compile Include="Assets\Scripts\CrearCasilla.cs" />
@@ -78,6 +71,7 @@
     <Compile Include="Assets\Scripts\Indicadores.cs" />
     <Compile Include="Assets\Scripts\IndicadoresCasilla.cs" />
     <Compile Include="Assets\Scripts\Menu\Character.cs" />
+    <Compile Include="Assets\Scripts\Menu\CharacterCSS.cs" />
     <Compile Include="Assets\Scripts\Menu\MainMenu.cs" />
     <Compile Include="Assets\Scripts\Network\MenuManager.cs" />
     <Compile Include="Assets\Scripts\Personaje.cs" />
@@ -117,7 +111,6 @@
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\Photon\PhotonUnityNetworking\link.xml" />
-    <None Include="Assets\DOTween\readme.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\Photon\PhotonLibs\Photon3Unity3D.xml" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
@@ -371,9 +364,6 @@
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
       <HintPath>C:/Users/eldes/Documents/GitHub/Pixel Mix/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
-    </Reference>
-    <Reference Include="DOTween">
-      <HintPath>C:/Users/eldes/Documents/GitHub/Pixel Mix/Assets/DOTween/DOTween.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>

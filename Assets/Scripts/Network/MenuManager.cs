@@ -13,7 +13,7 @@ public class MenuManager : MonoBehaviourPunCallbacks
 
     [Tooltip("UI del panel de crear nickname y concectarse a una sala")]
     [SerializeField]
-    private GameObject userNameScreen, connectScreen;
+    private GameObject userNameScreen, connectScreen, selectScreen;
 
     [Tooltip("UI del botón de crear nickname")]
     [SerializeField]
@@ -84,7 +84,8 @@ public class MenuManager : MonoBehaviourPunCallbacks
     {
         PhotonNetwork.NickName = userNameInput.text;
         userNameScreen.SetActive(false);
-        connectScreen.SetActive(true);
+        selectScreen.SetActive(true);
+        connectScreen.SetActive(false);
     }
 
     /// <summary>
@@ -127,6 +128,19 @@ public class MenuManager : MonoBehaviourPunCallbacks
         room.MaxPlayers = 4;
 
         PhotonNetwork.CreateRoom(createRoomInput.text, room, null);
+    }
+
+    public void OnClick_Character()
+    {
+        userNameScreen.SetActive(false);
+        selectScreen.SetActive(false);
+        connectScreen.SetActive(true);
+    }
+
+    public void OnClick_CloseGame()
+    {
+        Application.Quit();
+        Debug.Log("__________Se ha cerrado el juego__________");
     }
     #endregion
 }
