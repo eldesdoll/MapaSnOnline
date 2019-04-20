@@ -77,6 +77,8 @@
     <Compile Include="Assets\Scripts\Icono.cs" />
     <Compile Include="Assets\Scripts\Indicadores.cs" />
     <Compile Include="Assets\Scripts\IndicadoresCasilla.cs" />
+    <Compile Include="Assets\Scripts\Memorama\Carta.cs" />
+    <Compile Include="Assets\Scripts\Memorama\CrearCarta.cs" />
     <Compile Include="Assets\Scripts\Menu\Character.cs" />
     <Compile Include="Assets\Scripts\Menu\MainMenu.cs" />
     <Compile Include="Assets\Scripts\Network\MenuManager.cs" />
