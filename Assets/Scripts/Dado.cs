@@ -125,15 +125,23 @@ public class Dado : MonoBehaviour
 
     }
 
-    /// <summary>
-    /// estadoDado
-    /// este metodo es llamado por Update
-    /// Verifica si ya es el turno del jugador y por lo tanto activa el dado para que se imprima los valores del dado y que pueda tirar o desactiva el dado
-    /// si ya paso su turno. Se verifica si la variable "esTurno" es verdadera, si es asi entonces activamos los objetos guardados en la variable "Marco" mediante 
-    /// .SetActive y se imprime el valor de la variable "valorDado" en el objeto de texto "contDado", en caso de que no sea turno, los objetos guardados en 
-    /// "Marco" se desactivaran y el valor del dado permanecera en 1 igualando la variable "valorDado" a 1.
-    /// </summary>
-    public void estadoDado()
+    public void casillaOcupada(){
+        if (yaTiro == true)
+        {
+
+        }
+    }
+
+
+/// <summary>
+/// estadoDado
+/// este metodo es llamado por Update
+/// Verifica si ya es el turno del jugador y por lo tanto activa el dado para que se imprima los valores del dado y que pueda tirar o desactiva el dado
+/// si ya paso su turno. Se verifica si la variable "esTurno" es verdadera, si es asi entonces activamos los objetos guardados en la variable "Marco" mediante 
+/// .SetActive y se imprime el valor de la variable "valorDado" en el objeto de texto "contDado", en caso de que no sea turno, los objetos guardados en 
+/// "Marco" se desactivaran y el valor del dado permanecera en 1 igualando la variable "valorDado" a 1.
+/// </summary>
+public void estadoDado()
     {
         if (esTurno == true)
         {

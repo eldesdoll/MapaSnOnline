@@ -5,8 +5,8 @@ using UnityEngine;
 public class IndicadoresCasilla : MonoBehaviour
 {
     public GameObject pint, des, scripts;
-    public int cas, posx,total,posy;
-    public GameObject PintadosPrefab;
+    public int cas, posx,total,posy,posx2;
+    public GameObject PintadosPrefab,TroncoPrefab;
     public Transform Pintados;
     public List<GameObject> pintadasList = new List<GameObject>();
 
@@ -45,9 +45,10 @@ public class IndicadoresCasilla : MonoBehaviour
             }
         }
     }
-    public void desLeonn()
+    public void desLeonn(int casilla)
     {
-
+        posx2 = 5 + (casilla * 2);
+        GameObject iconoTemp = Instantiate(TroncoPrefab, new Vector3(posx2, 1.8f, 0), Quaternion.Euler(new Vector3(0, 0, 0)));
     }
     public void Crear()
     {

@@ -10076,7 +10076,7 @@ MonoBehaviour:
   posy: 0
   posx2: 0
   posy2: 0
-  idPersonaje: 2
+  idPersonaje: 5
   total: 0
   personajePrefab: {fileID: 8374747939170389795, guid: 6449d7a80efbb034f95c24b6c1f60bb9,
     type: 3}
@@ -10141,13 +10141,18 @@ MonoBehaviour:
   presionado1: 0
   presionado2: 0
   condiHab1Aus: 0
+  hayPint1: 0
   casillaAPintar: 0
   dif: 0
   verifCasilla: 0
   dif1: 0
   dif2: 0
+  casiModif1: 0
+  casiModifi2: 0
   casRecorridas: 0
   repite: 0
+  hayHab2Leonn: 0
+  casiModif: 0
 --- !u!114 &940622044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10167,7 +10172,10 @@ MonoBehaviour:
   posx: 0
   total: 0
   posy: 0
+  posx2: 0
   PintadosPrefab: {fileID: 3184629594125890550, guid: 3062b37607c7c4e438409d44b6d4dac8,
+    type: 3}
+  TroncoPrefab: {fileID: 1473285859705017343, guid: 6fb90dacbed214b4094cc5ebb53f6363,
     type: 3}
   Pintados: {fileID: 1603508696}
   pintadasList: []
