@@ -15,6 +15,7 @@ TagManager:
   - ObjInmune
   - ObjBuff
   - ObjNerf
+  - tronco
   layers:
   - Default
   - TransparentFX

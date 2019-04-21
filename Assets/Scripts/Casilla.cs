@@ -8,7 +8,7 @@ public class Casilla : MonoBehaviour
     public int idCasilla = 0;
     public SpriteRenderer spriteR;
     public Sprite[] sprite;
-    public bool esHabilidad = false, esDeshabilidad = false, esNegra = false, esMinijuego = false, esPintada = false, esMeta = false, esInicio = false, esFinal = false, esOcupada = false;
+    public bool esHabilidad, esDeshabilidad, esNegra, esMinijuego, esPintada, esMeta, esInicio, esFinal, esOcupada, esDesLeonn, esDesLeonn2;
 
     /// <summary>
     /// AsignarTextura
