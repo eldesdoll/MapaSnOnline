@@ -130,13 +130,6 @@ public class MenuManager : MonoBehaviourPunCallbacks
         PhotonNetwork.CreateRoom(createRoomInput.text, room, null);
     }
 
-    public void OnClick_Character()
-    {
-        userNameScreen.SetActive(false);
-        selectScreen.SetActive(false);
-        connectScreen.SetActive(true);
-    }
-
     public void OnClick_CloseGame()
     {
         Application.Quit();

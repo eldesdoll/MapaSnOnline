@@ -11,7 +11,6 @@ public class CharacterCSS : MonoBehaviour
     public List<Character> characters = new List<Character>();
     public GameObject charCellPrefab;
 
-    // Start is called before the first frame update
     void Start()
     {
         foreach (Character character in characters)
