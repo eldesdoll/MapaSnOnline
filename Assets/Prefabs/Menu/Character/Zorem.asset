@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Zorem
   characterSprite: {fileID: 21300000, guid: 87a23f8abbe433c4b875f84dbaaec897, type: 3}
-  zoom: 1
+  zoom: 0.6

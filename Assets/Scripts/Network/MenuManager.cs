@@ -13,7 +13,7 @@ public class MenuManager : MonoBehaviourPunCallbacks
 
     [Tooltip("UI del panel de crear nickname y concectarse a una sala")]
     [SerializeField]
-    private GameObject userNameScreen, connectScreen;
+    private GameObject userNameScreen, connectScreen, selectScreen;
 
     [Tooltip("UI del botón de crear nickname")]
     [SerializeField]
@@ -60,7 +60,7 @@ public class MenuManager : MonoBehaviourPunCallbacks
     /// </summary>
     public override void OnJoinedRoom()
     {
-        PhotonNetwork.LoadLevel(1);
+        PhotonNetwork.LoadLevel(12);
     }
 
     /// <summary>
@@ -127,6 +127,12 @@ public class MenuManager : MonoBehaviourPunCallbacks
         room.MaxPlayers = 4;
 
         PhotonNetwork.CreateRoom(createRoomInput.text, room, null);
+    }
+
+    public void OnClick_CloseGame()
+    {
+        Application.Quit();
+        Debug.Log("__________Se ha cerrado el juego__________");
     }
     #endregion
 }
