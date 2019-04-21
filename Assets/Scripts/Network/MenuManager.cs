@@ -60,7 +60,7 @@ public class MenuManager : MonoBehaviourPunCallbacks
     /// </summary>
     public override void OnJoinedRoom()
     {
-        PhotonNetwork.LoadLevel(1);
+        PhotonNetwork.LoadLevel(12);
     }
 
     /// <summary>
@@ -84,8 +84,7 @@ public class MenuManager : MonoBehaviourPunCallbacks
     {
         PhotonNetwork.NickName = userNameInput.text;
         userNameScreen.SetActive(false);
-        selectScreen.SetActive(true);
-        connectScreen.SetActive(false);
+        connectScreen.SetActive(true);
     }
 
     /// <summary>

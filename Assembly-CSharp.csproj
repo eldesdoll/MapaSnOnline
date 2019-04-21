@@ -65,7 +65,6 @@
     <Compile Include="Assets\Scripts\CrearCasilla.cs" />
     <Compile Include="Assets\Scripts\CrearPersonaje.cs" />
     <Compile Include="Assets\Scripts\Dado.cs" />
-    <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\Habilidades.cs" />
     <Compile Include="Assets\Scripts\Icono.cs" />
     <Compile Include="Assets\Scripts\Indicadores.cs" />
@@ -74,7 +73,6 @@
     <Compile Include="Assets\Scripts\Memorama\CrearCarta.cs" />
     <Compile Include="Assets\Scripts\Menu\Character.cs" />
     <Compile Include="Assets\Scripts\Menu\CharacterCSS.cs" />
-    <Compile Include="Assets\Scripts\Menu\MainMenu.cs" />
     <Compile Include="Assets\Scripts\Network\MenuManager.cs" />
     <Compile Include="Assets\Scripts\Personaje.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
