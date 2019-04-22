@@ -10,7 +10,7 @@ public class Personaje : MonoBehaviour
     public SpriteRenderer spriteR;
     public Sprite[] sprite;
     public GameObject textCasilla, textPh,scripts;
-    public bool esPintado, esBloqueado, esBuff, esNerf, esInmune, esAtraido;
+    public bool esPintado, esBloqueado, esBuff, esNerf, esInmune, esAtraido, verificado, condi;
 
     /*void Start()
     {
@@ -116,7 +116,11 @@ public class Personaje : MonoBehaviour
     /// </summary>
     public void verificaCasilla()
     {
-        if ((casillaActual > 0 && scripts.GetComponent<Dado>().yaTiro == true && scripts.GetComponent<Dado>().esTurno == false) || (scripts.GetComponent<Habilidades>().verCasiHab1Zor == true))
+        if(scripts.GetComponent<Dado>().yaTiro == true)
+        {
+            condi = true;
+        }
+        if ((casillaActual > 0 && verificado == false && scripts.GetComponent<Dado>().caminando == false && condi == true && scripts.GetComponent<Dado>().yaTiro == false) || (scripts.GetComponent<Habilidades>().verCasiHab1Zor == true))
         {
             if (scripts.GetComponent<CrearCasilla>().casillas[casillaActual].GetComponent<Casilla>().esHabilidad == true)
             {
@@ -145,7 +149,7 @@ public class Personaje : MonoBehaviour
             {
                 ph = 0;
             }
-            else if (scripts.GetComponent<CrearCasilla>().casillas[casillaActual].GetComponent<Casilla>().esMinijuego == true )
+            else if (scripts.GetComponent<CrearCasilla>().casillas[casillaActual].GetComponent<Casilla>().esMinijuego== true)
             {
                 int random = Random.Range(2, 11);
                 PhotonNetwork.LoadLevel(random);
@@ -154,11 +158,25 @@ public class Personaje : MonoBehaviour
             {
                 esPintado = true;
             }
-
+            else
+            {
+                esPintado = false;
+            }
+            if (scripts.GetComponent<CrearCasilla>().casillas[casillaActual].GetComponent<Casilla>().esDesLeonn == true)
+            {
+                if (ph >= 1) { ph = ph - 1; } else { ph = 0; }
+                //falta que los puntos robados vayan a leonn 
+            }
+            if (scripts.GetComponent<CrearCasilla>().casillas[casillaActual].GetComponent<Casilla>().esDesLeonn2 == true)
+            {
+                if (ph >= 2) { ph = ph - 2; } else { ph = 0; }
+                //falta que los puntos robados vayan a leonn 
+            }
+            verificado = false;
+            condi = false; 
             imprimePh();
             scripts.GetComponent<Habilidades>().verCasiHab1Zor = false;
-        }
-        
+        }        
     }
     
 }
