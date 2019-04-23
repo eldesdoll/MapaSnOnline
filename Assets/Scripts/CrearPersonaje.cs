@@ -79,9 +79,9 @@ public class CrearPersonaje : MonoBehaviour
                 iconos[2].GetComponent<Icono>().AsignarTextura(sprites[14]);
                 break;
             case 5:
-                iconos[0].GetComponent<Icono>().AsignarTextura(sprites[0]);
-                iconos[1].GetComponent<Icono>().AsignarTextura(sprites[1]);
-                iconos[2].GetComponent<Icono>().AsignarTextura(sprites[2]);
+                iconos[0].GetComponent<Icono>().AsignarTextura(sprites[15]);
+                iconos[1].GetComponent<Icono>().AsignarTextura(sprites[16]);
+                iconos[2].GetComponent<Icono>().AsignarTextura(sprites[17]);
                 break;
             default:
                 break;

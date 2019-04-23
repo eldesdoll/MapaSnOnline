@@ -10090,8 +10090,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: f15293397d290f74e85d1e0b76a98078, type: 3}
   - {fileID: 21300000, guid: 2a89f185a467ce24b83f148139bd02d2, type: 3}
   - {fileID: 21300000, guid: 8653377594de7fc43b4be4b6625ce2d3, type: 3}
-  - {fileID: 21300000, guid: 1dceaeed7fa04a7428e0862d02b01554, type: 3}
   - {fileID: 21300000, guid: cdd10100e39fc1f4089aba5c16096df0, type: 3}
+  - {fileID: 21300000, guid: 1dceaeed7fa04a7428e0862d02b01554, type: 3}
   - {fileID: 21300000, guid: ae0aec340aa0e0643a24526b7a61a68b, type: 3}
   - {fileID: 21300000, guid: 852d3fa7b9e96894abf209f70ea1c97b, type: 3}
   - {fileID: 21300000, guid: e1fad94bc4a2f2c498badc715372629d, type: 3}
@@ -10099,6 +10099,9 @@ MonoBehaviour:
   - {fileID: 21300000, guid: dc89d02c0c6ba6b42bf64eaf67c18be6, type: 3}
   - {fileID: 21300000, guid: 3a6a34691c73413458b571833a2d7215, type: 3}
   - {fileID: 21300000, guid: 77092513d4383d54888740474e90402b, type: 3}
+  - {fileID: 21300000, guid: 77092513d4383d54888740474e90402b, type: 3}
+  - {fileID: 21300000, guid: 5cb31c5bb681e004085bf7c244924e95, type: 3}
+  - {fileID: 21300000, guid: 1e368229285a65c488d4e3abf13c1c90, type: 3}
   IconoPrefab: {fileID: 6574562326959331295, guid: 9138ecdd3bb7fe44bb411caabf0cad2c,
     type: 3}
   IconoParent: {fileID: 1085577628}
@@ -10137,22 +10140,8 @@ MonoBehaviour:
   - {fileID: 899031026}
   - {fileID: 1551796695}
   - {fileID: 76023884}
-  hayPint: 0
-  presionado1: 0
-  presionado2: 0
-  condiHab1Aus: 0
-  hayPint1: 0
-  casillaAPintar: 0
-  dif: 0
-  verifCasilla: 0
-  dif1: 0
-  dif2: 0
-  casiModif1: 0
-  casiModifi2: 0
-  casRecorridas: 0
   repite: 0
-  hayHab2Leonn: 0
-  casiModif: 0
+  tronco: {fileID: 0}
 --- !u!114 &940622044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19688,7 +19677,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93a01a64fbb08484fab1de4c0a5bacb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvas: {fileID: 0}
 --- !u!4 &1975665694
 Transform:
   m_ObjectHideFlags: 0

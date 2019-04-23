@@ -15,15 +15,15 @@ public class Habilidades : MonoBehaviour
     //Austin
     public GameObject btnCasillas;
     public List<GameObject> botones = new List<GameObject>();
-    public bool hayPint, presionado1, presionado2, condiHab1Aus, hayPint1;
-    public int casillaAPintar, dif, verifCasilla, dif1, dif2, casiModif1, casiModifi2;
-    public float casRecorridas;
+    private int casillaAPintar, dif, verifCasilla, dif1, dif2, casiModif1, casiModif2;
+    private float casRecorridas;
+    private bool condiHab1Au, hayPint, hayPint1, presionado1, presionado2, condiHab1Aus;
     //Rubi
     //Stella
     //Leonn
     public bool repite = false;
-    public bool hayHab2Leonn;
-    public int casiModif;
+    private bool hayHab2Leonn;
+    private int casiModif;
     public GameObject tronco;
     //
     void Update()
@@ -127,27 +127,23 @@ public class Habilidades : MonoBehaviour
     //---------------------------------------------ZOREM---------------------------------------------
     public void hab1zorem()
     {
-        verCasiHab1Zor = true;
         actTiempo = true;
         GetComponent<Dado>().esTurno = false;
         per.GetComponent<Animator>().SetBool("hab1", true);
     }
     public void terhab1zor()
     {
-
+        if (tiempo >= 1.8f && condiZor1 == false)
+        {
+            GetComponent<CrearPersonaje>().posx = GetComponent<CrearPersonaje>().posx + 6;
+            per.transform.localPosition = new Vector3(scripts.GetComponent<CrearPersonaje>().posx, scripts.GetComponent<CrearPersonaje>().posy);
+            condiZor1 = true;
+        }
         if (tiempo >= 2.5f)
         {
 
-            if (tiempo >= 2f && condiZor1 == false)
-            {
-                GetComponent<CrearPersonaje>().posx = GetComponent<CrearPersonaje>().posx + 6;
-                per.transform.localPosition = new Vector3(scripts.GetComponent<CrearPersonaje>().posx, scripts.GetComponent<CrearPersonaje>().posy);
-                condiZor1 = true;
-            }
-            else
-            {
                 GetComponent<Dado>().btnHab1.SetActive(false);
-            }
+                verCasiHab1Zor = true;
         }
         if (tiempo >= 3.5f)
         {
@@ -159,6 +155,7 @@ public class Habilidades : MonoBehaviour
             actTiempo = false;
             tiempo = 0;
             esHab1 = false;
+            condiZor1 = false;
         }
     }
     //---------------------hab3 Zorem---------------------
@@ -260,15 +257,21 @@ public class Habilidades : MonoBehaviour
                 GetComponent<CrearCasilla>().casillas[casillaAPintar].GetComponent<Casilla>().esPintada = true;
                 per.GetComponent<Animator>().SetFloat("lanzoPintura", 0);
             }
-            if (tiempo >= 3) { actTiempo = false; tiempo = 0; esHab1 = false; presionado1 = false; presionado2 = false; condiHab1Aus = false;
+            if (tiempo >= 3) { actTiempo = false; tiempo = 0; presionado1 = false; presionado2 = false; condiHab1Aus = false;
                 GetComponent<Dado>().esTurno = true; per.GetComponent<Animator>().SetBool("hab1", false);
             }
+        }
+        if (GetComponent<Dado>().caminando == true)
+        {
+            esHab1 = false;
+            hayPint1 = true;
         }
     }
     public void presiono()
     {
-        if (presionado1 == false) { presionado1 = true; } else { presionado2 = true; }
+        if (presionado1 == false) { presionado1 = true; casiModif1 = casillaAPintar; } else { presionado2 = true; casiModif2 = casillaAPintar; }
     }
+
     public void pres1()
     {
         casillaAPintar = per.GetComponent<Personaje>().casillaActual - 5;
@@ -491,6 +494,12 @@ public class Habilidades : MonoBehaviour
             GetComponent<CrearCasilla>().casillas[casiModif].GetComponent<Casilla>().esDesLeonn2 = false;
             hayHab2Leonn = false;
             Destroy(tronco);
+        }
+        if(hayPint1 == true && GetComponent<Dado>().esTurno == true)
+        {
+            GetComponent<CrearCasilla>().casillas[casiModif1].GetComponent<Casilla>().esPintada = false;
+            GetComponent<CrearCasilla>().casillas[casiModif2].GetComponent<Casilla>().esPintada = false;
+            hayPint1 = false;
         }
     }
 }
