@@ -65,6 +65,11 @@
     <Compile Include="Assets\Scripts\CrearCasilla.cs" />
     <Compile Include="Assets\Scripts\CrearPersonaje.cs" />
     <Compile Include="Assets\Scripts\Dado.cs" />
+    <Compile Include="Assets\Scripts\Dardos\CrearDardos.cs" />
+    <Compile Include="Assets\Scripts\Dardos\CrearGlobos.cs" />
+    <Compile Include="Assets\Scripts\Dardos\Dardo.cs" />
+    <Compile Include="Assets\Scripts\Dardos\Globos.cs" />
+    <Compile Include="Assets\Scripts\Dardos\Puntaje.cs" />
     <Compile Include="Assets\Scripts\Habilidades.cs" />
     <Compile Include="Assets\Scripts\Icono.cs" />
     <Compile Include="Assets\Scripts\Indicadores.cs" />
