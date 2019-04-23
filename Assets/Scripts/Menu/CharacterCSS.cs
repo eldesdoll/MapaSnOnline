@@ -7,18 +7,18 @@ using DG.Tweening;
 
 public class CharacterCSS : MonoBehaviour
 {
-    private GridLayoutGroup gridLayout;
+    /*private GridLayoutGroup gridLayout;
     [HideInInspector]
     public Vector2 slotArtworkSize;
 
 
-    public static CharacterCSS instance;
+    public static CharacterCSS instance;*/
     [Header("Characters List")]
     public List<Character> characters = new List<Character>();
     [Space]
     [Header("Public References")]
     public GameObject charCellPrefab;
-    public GameObject gridBgPrefab;
+    /*public GameObject gridBgPrefab;
     public Transform playerSlotsContainer;
     [Space]
     [Header("Current Confirmed Character")]
@@ -27,7 +27,7 @@ public class CharacterCSS : MonoBehaviour
     private void Awake()
     {
         instance = this;
-    }
+    }*/
 
     void Start()
     {

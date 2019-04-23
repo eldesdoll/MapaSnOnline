@@ -2163,7 +2163,7 @@ MonoBehaviour:
   characters:
   - {fileID: 11400000, guid: 43185a5093afcc348a65cb5a0953e4ea, type: 2}
   - {fileID: 11400000, guid: e6abb8807bdbd3b4ea2d2fc64a00bbcf, type: 2}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 8f625fac6f0d8de408a94a1966047114, type: 2}
   - {fileID: 11400000, guid: f9e530a1b609ac44694c645ef84e9a10, type: 2}
   - {fileID: 11400000, guid: 025d493aa95724040ab5bc5d8ca02aa9, type: 2}
   - {fileID: 11400000, guid: a7eaef446d3a5c145adb21fb52d4be1c, type: 2}
