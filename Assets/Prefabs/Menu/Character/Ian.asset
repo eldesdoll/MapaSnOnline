@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Ian
   characterSprite: {fileID: 21300000, guid: 770dd11668fbf9d42a95c034acca6d4c, type: 3}
+  characterIcon: {fileID: 21300000, guid: 34bb98482a1f411488328cd1ffd5a200, type: 3}
   zoom: 1
