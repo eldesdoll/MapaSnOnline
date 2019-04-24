@@ -7,6 +7,8 @@ using DG.Tweening;
 
 public class CharacterCSS : MonoBehaviour
 {
+  
+
     /*private GridLayoutGroup gridLayout;
     [HideInInspector]
     public Vector2 slotArtworkSize;
@@ -28,7 +30,7 @@ public class CharacterCSS : MonoBehaviour
     {
         instance = this;
     }*/
-
+      /*
     void Start()
     {
 
@@ -46,7 +48,7 @@ public class CharacterCSS : MonoBehaviour
         }
 
     }
-
+    
     private void SpawnCharacterCell(Character character)
     {
         GameObject charCell = Instantiate(charCellPrefab, transform);
@@ -121,4 +123,6 @@ public class CharacterCSS : MonoBehaviour
         Vector2 pixelPivot = sprite.pivot;
         return new Vector2(pixelPivot.x / pixelSize.x, pixelPivot.y / pixelSize.y);
     }
+
+    */
 }

@@ -1157,3 +1157,5 @@ C:\Users\isai_\Desktop\PixelMix\MapaSnOnline\obj\Debug\Assembly-CSharp.csproj.Co
 C:\Users\isai_\Desktop\PixelMix\MapaSnOnline\obj\Debug\Assembly-CSharp.csproj.CopyComplete
 C:\Users\isai_\Desktop\PixelMix\MapaSnOnline\obj\Debug\Assembly-CSharp.dll
 C:\Users\isai_\Desktop\PixelMix\MapaSnOnline\obj\Debug\Assembly-CSharp.pdb
+C:\Users\isai_\Desktop\PixelMix\MapaSnOnline\Temp\bin\Debug\DOTween.dll
+C:\Users\isai_\Desktop\PixelMix\MapaSnOnline\Temp\bin\Debug\DOTween.xml

@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 380257074052790694}
   m_Layer: 0
   m_Name: Dardo
-  m_TagString: Untagged
+  m_TagString: dardo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -147,7 +147,7 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_AutoConfigureDistance: 1
-  m_Distance: 0.005
+  m_Distance: 5.7531385
   m_DampingRatio: 0
   m_Frequency: 2
 --- !u!114 &380257074052790694
@@ -163,7 +163,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 380257074052790692}
-  hook: {fileID: 0}
+  hookrb: {fileID: 0}
+  numDard: 0
+  SJ: {fileID: 0}
   tiempoLiberado: 0.15
   maxEstirado: 2
   nuevoDardo: {fileID: 0}
+  hook: {fileID: 0}
+  scripts: {fileID: 0}

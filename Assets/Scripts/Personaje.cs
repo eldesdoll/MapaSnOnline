@@ -132,6 +132,7 @@ public class Personaje : MonoBehaviour
                 {
                     ph++;
                 }
+                scripts.GetComponent<Habilidades>().verCasiHab1Zor = false;
 
             }
             else if (scripts.GetComponent<CrearCasilla>().casillas[casillaActual].GetComponent<Casilla>().esDeshabilidad == true)
@@ -144,6 +145,7 @@ public class Personaje : MonoBehaviour
                 {
                     ph--;
                 }
+                scripts.GetComponent<Habilidades>().verCasiHab1Zor = false;
             }
             else if (scripts.GetComponent<CrearCasilla>().casillas[casillaActual].GetComponent<Casilla>().esNegra == true)
             {
@@ -165,11 +167,13 @@ public class Personaje : MonoBehaviour
             if (scripts.GetComponent<CrearCasilla>().casillas[casillaActual].GetComponent<Casilla>().esDesLeonn == true)
             {
                 if (ph >= 1) { ph = ph - 1; } else { ph = 0; }
+                scripts.GetComponent<Habilidades>().verCasiHab1Zor = false;
                 //falta que los puntos robados vayan a leonn 
             }
             if (scripts.GetComponent<CrearCasilla>().casillas[casillaActual].GetComponent<Casilla>().esDesLeonn2 == true)
             {
                 if (ph >= 2) { ph = ph - 2; } else { ph = 0; }
+                scripts.GetComponent<Habilidades>().verCasiHab1Zor = false;
                 //falta que los puntos robados vayan a leonn 
             }
             verificado = false;

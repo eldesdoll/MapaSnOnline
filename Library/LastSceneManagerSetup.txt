@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/12-Menu seleccion.unity
+- path: Assets/Scenes/Minijuegos/11-Memorama.unity
   isLoaded: 1
   isActive: 1

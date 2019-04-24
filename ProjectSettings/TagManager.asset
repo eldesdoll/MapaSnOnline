@@ -16,6 +16,8 @@ TagManager:
   - ObjBuff
   - ObjNerf
   - tronco
+  - granizo
+  - dardo
   layers:
   - Default
   - TransparentFX
