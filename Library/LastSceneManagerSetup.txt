@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Minijuegos/11-Memorama.unity
+- path: Assets/Scenes/01-Mapa.unity
   isLoaded: 1
   isActive: 1

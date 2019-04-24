@@ -5376,11 +5376,11 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -5679,8 +5679,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  tiempo: 0
+  scripts: {fileID: 0}
+  posx: 0
+  posy: 0
   seDetuvo: 0
+  tiempo: 0
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -10076,7 +10079,7 @@ MonoBehaviour:
   posy: 0
   posx2: 0
   posy2: 0
-  idPersonaje: 0
+  idPersonaje: 1
   total: 0
   personajePrefab: {fileID: 8374747939170389795, guid: 6449d7a80efbb034f95c24b6c1f60bb9,
     type: 3}
@@ -10106,6 +10109,7 @@ MonoBehaviour:
     type: 3}
   IconoParent: {fileID: 1085577628}
   iconos: []
+  Respawn: 0
 --- !u!114 &940622043
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21349,11 +21353,11 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:

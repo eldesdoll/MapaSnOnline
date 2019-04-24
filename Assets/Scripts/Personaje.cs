@@ -8,14 +8,9 @@ public class Personaje : MonoBehaviour
 {
     public int casillaActual=0, ph=0;
     public SpriteRenderer spriteR;
-    public Sprite[] sprite;
-    public GameObject textCasilla, textPh,scripts;
+    public GameObject textCasilla, textPh,scripts, camera;
     public bool esPintado, esBloqueado, esBuff, esNerf, esInmune, esAtraido, verificado, condi;
-
-    /*void Start()
-    {
-        
-    }*/
+    
 
     /// <summary>
     /// Update
@@ -31,6 +26,7 @@ public class Personaje : MonoBehaviour
     private void Awake()
     {
         textCasilla = GameObject.FindGameObjectWithTag("NumCasilla");
+        camera = GameObject.FindGameObjectWithTag("MainCamera");
         textPh = GameObject.FindGameObjectWithTag("Ph");
         scripts = GameObject.Find("Scripts");
 
@@ -154,7 +150,8 @@ public class Personaje : MonoBehaviour
             else if (scripts.GetComponent<CrearCasilla>().casillas[casillaActual].GetComponent<Casilla>().esMinijuego== true)
             {
                 int random = Random.Range(2, 11);
-                PhotonNetwork.LoadLevel(random);
+                PhotonNetwork.LoadLevel(6);
+               
             }
             if (scripts.GetComponent<CrearCasilla>().casillas[casillaActual].GetComponent<Casilla>().esPintada == true)
             {
