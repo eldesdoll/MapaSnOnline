@@ -371,7 +371,7 @@
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="DOTween">
-      <HintPath>C:/Users/isai_/Desktop/PixelMix/MapaSnOnline/Assets/Demigiant/DOTween/DOTween.dll</HintPath>
+      <HintPath>C:/Users/eldes/Documents/GitHub/Pixel Mix/Assets/Demigiant/DOTween/DOTween.dll</HintPath>
     </Reference>
     <Reference Include="Photon3Unity3D">
       <HintPath>C:/Users/isai_/Desktop/PixelMix/MapaSnOnline/Assets/Photon/PhotonLibs/Photon3Unity3D.dll</HintPath>
@@ -386,7 +386,7 @@
       <HintPath>C:/Users/isai_/Desktop/PixelMix/MapaSnOnline/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>C:/Users/isai_/Desktop/PixelMix/MapaSnOnline/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>C:/Users/eldes/Documents/GitHub/Pixel Mix/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>

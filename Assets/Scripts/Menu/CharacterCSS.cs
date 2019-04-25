@@ -7,30 +7,28 @@ using DG.Tweening;
 
 public class CharacterCSS : MonoBehaviour
 {
-  
-
-    /*private GridLayoutGroup gridLayout;
+    private GridLayoutGroup gridLayout;
     [HideInInspector]
     public Vector2 slotArtworkSize;
 
 
-    public static CharacterCSS instance;*/
-    [Header("Characters List")]
+    public static CharacterCSS instance;
+    [Header("Lista de caracteres")]
     public List<Character> characters = new List<Character>();
     [Space]
-    [Header("Public References")]
+    [Header("Referencias Publicas")]
     public GameObject charCellPrefab;
-    /*public GameObject gridBgPrefab;
+    public GameObject gridBgPrefab;
     public Transform playerSlotsContainer;
     [Space]
-    [Header("Current Confirmed Character")]
+    [Header("Confirma el carácter")]
     public Character confirmedCharacter;
 
     private void Awake()
     {
         instance = this;
-    }*/
-      /*
+    }
+
     void Start()
     {
 
@@ -41,14 +39,19 @@ public class CharacterCSS : MonoBehaviour
         gridBG.sizeDelta = GetComponent<RectTransform>().sizeDelta;
 
         slotArtworkSize = playerSlotsContainer.GetChild(0).Find("artwork").GetComponent<RectTransform>().sizeDelta;
-
+        
         foreach (Character character in characters)
         {
             SpawnCharacterCell(character);
         }
 
     }
-    
+
+    /// <summary>
+    /// Esta función tiene como tarea el cambiar la imagen y el nombre del caráter deperndiendo de los valores del ... character ademas de que
+    /// acomoda el pivote de la imagen y agrega el zoom que se escribio previamente del ... character
+    /// </summary>
+    /// <param name="character"></param>
     private void SpawnCharacterCell(Character character)
     {
         GameObject charCell = Instantiate(charCellPrefab, transform);
@@ -116,7 +119,7 @@ public class CharacterCSS : MonoBehaviour
             playerSlotsContainer.GetChild(player).DOPunchPosition(Vector3.down * 3, .3f, 10, 1);
         }
     }
-
+    
     public Vector2 uiPivot(Sprite sprite)
     {
         Vector2 pixelSize = new Vector2(sprite.texture.width, sprite.texture.height);
