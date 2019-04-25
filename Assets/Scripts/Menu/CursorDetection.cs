@@ -7,6 +7,7 @@ using UnityEngine.UI;
 
 public class CursorDetection : MonoBehaviour
 {
+    /*
     private GraphicRaycaster gr;
     private PointerEventData pointerEventData = new PointerEventData(null);
 
@@ -109,4 +110,5 @@ public class CursorDetection : MonoBehaviour
     {
         hasToken = trigger;
     }
+    */
 }

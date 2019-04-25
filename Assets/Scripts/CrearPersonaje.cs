@@ -14,7 +14,12 @@ public class CrearPersonaje : MonoBehaviour
     public GameObject IconoPrefab;
     public Transform IconoParent;
     public List<GameObject> iconos = new List<GameObject>();
-    
+    public bool Respawn;
+
+    private void Update()
+    {
+        actualizar();
+    }
     void Start()
     {
         Crear();
@@ -23,14 +28,31 @@ public class CrearPersonaje : MonoBehaviour
 
     public void Crear()
     {
-        posy = 4.5f; posx = 5;
-        AsignarCoord();
-        personajeTemp = Instantiate(personajePrefab, new Vector3(posx, posy, 0), Quaternion.Euler(new Vector3(0, 0, 0)));
-        personajeTemp.transform.parent = personajeParent;
-        AsignarNombres();
-        per = GameObject.FindGameObjectWithTag("PerPref");
-        per.GetComponent<Personaje>().AsignarTamanos();
-        AsignarTexturas();  
+        if ((RestablecerValores.obtenerRespawn())==false)
+        {
+            posy = 4.5f; posx = 5;
+            AsignarCoord();
+            personajeTemp = Instantiate(personajePrefab, new Vector3(posx, posy, 0), Quaternion.Euler(new Vector3(0, 0, 0)));
+            personajeTemp.transform.parent = personajeParent;
+            AsignarNombres();
+            per = GameObject.FindGameObjectWithTag("PerPref");
+            per.GetComponent<Personaje>().AsignarTamanos();
+            AsignarTexturas();
+            RestablecerValores.ponerRespawn(true);
+        }
+        else
+        {
+            AsignarCoord();
+            posx = RestablecerValores.obtenerPosx();
+            personajeTemp = Instantiate(personajePrefab, new Vector3(posx, posy, 0), Quaternion.Euler(new Vector3(0, 0, 0)));
+            personajeTemp.transform.parent = personajeParent;
+            AsignarNombres();
+            per = GameObject.FindGameObjectWithTag("PerPref");
+            per.GetComponent<Personaje>().AsignarTamanos();
+            AsignarTexturas();
+            asignarDatos();
+        }
+        
     }
 
     public void crearIconos()
@@ -169,6 +191,21 @@ public class CrearPersonaje : MonoBehaviour
 
     }
 
-   
+    public void actualizar()
+    {
+        if (GetComponent<Dado>().caminando == true)
+        {
+            RestablecerValores.ponerPosx(posx);  //posx
+            RestablecerValores.ponerPosy(posy); //posy 
+            RestablecerValores.ponerPH(per.GetComponent<Personaje>().ph); //ph 
+            RestablecerValores.ponerCasilla(per.GetComponent<Personaje>().casillaActual); //casillaActual
 
+        }
+    }
+
+    public void asignarDatos()
+    {
+        per.GetComponent<Personaje>().ph = RestablecerValores.obtenerPH();
+        per.GetComponent<Personaje>().casillaActual = RestablecerValores.obtenerCasilla();
+    }
 }

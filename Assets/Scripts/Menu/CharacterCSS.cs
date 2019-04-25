@@ -126,4 +126,6 @@ public class CharacterCSS : MonoBehaviour
         Vector2 pixelPivot = sprite.pivot;
         return new Vector2(pixelPivot.x / pixelSize.x, pixelPivot.y / pixelSize.y);
     }
+
+    */
 }
