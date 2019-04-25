@@ -2118,10 +2118,10 @@ RectTransform:
   m_Father: {fileID: 1986912489}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 24, y: 74}
-  m_SizeDelta: {x: 0, y: 125}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 82}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1821636650
 MonoBehaviour:
@@ -2140,11 +2140,11 @@ MonoBehaviour:
     m_Right: 0
     m_Top: 0
     m_Bottom: 0
-  m_ChildAlignment: 0
+  m_ChildAlignment: 1
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 125, y: 125}
-  m_Spacing: {x: 0, y: 0}
+  m_CellSize: {x: 100, y: 100}
+  m_Spacing: {x: 2, y: 2}
   m_Constraint: 0
   m_ConstraintCount: 2
 --- !u!114 &1821636651
@@ -2169,7 +2169,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a7eaef446d3a5c145adb21fb52d4be1c, type: 2}
   charCellPrefab: {fileID: 1518450411981782, guid: 22f4b5680fbcf9b49ade35bf8818b412,
     type: 3}
-  gridBgPrefab: {fileID: 1656363544186126, guid: cd481247c227658429900633e47eeb34,
+  gridBgPrefab: {fileID: 1656363544186126, guid: e78dfd9f1a56f084695110540900022f,
     type: 3}
   playerSlotsContainer: {fileID: 280531571}
   confirmedCharacter: {fileID: 0}

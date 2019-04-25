@@ -27,7 +27,7 @@ public class CursorDetection : MonoBehaviour
     void Update()
     {
 
-        //CONFIRM
+        //Acepatar
         if (Input.GetKeyDown(KeyCode.Z))
         {
             if (currentCharacter != null)
@@ -37,7 +37,7 @@ public class CursorDetection : MonoBehaviour
             }
         }
 
-        //CANCEL
+        //Cancelar
         if (Input.GetKeyDown(KeyCode.X))
         {
             CharacterCSS.instance.confirmedCharacter = null;
